@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Minecraft Launcher
+Comment=Official Minecraft Launcher
+Keywords[ru]=Майнкрафт;кубач;
+Exec=minecraft-launcher
+Icon=minecraft-launcher
+Terminal=false
+Categories=Game;Application;
+StartupWMClass=minecraft-launcher
