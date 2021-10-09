@@ -4,8 +4,8 @@ Release:	1
 Summary:	Minecraft Java Launcher bootstrap
 License:	All rights reserved
 Source0:	https://launcher.mojang.com/v1/objects/ce9e6169550628003e22de8086e9fe1186c2285e/%{name}
-Source1:	minecraft-launcher.svg
-Source2:	minecraft-launcher.desktop
+Source1:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/master/%{name}.svg
+Source2:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/master/%{name}.desktop
 
 Requires:	jre-headless
 Requires:	atk
