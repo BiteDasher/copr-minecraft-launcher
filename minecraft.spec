@@ -1,6 +1,6 @@
 Name:		minecraft-launcher
 Version:	1035
-Release:	1
+Release:	2
 Summary:	Minecraft Java Launcher bootstrap
 License:	All rights reserved
 Source0:	https://launcher.mojang.com/v1/objects/ce9e6169550628003e22de8086e9fe1186c2285e/%{name}
@@ -16,6 +16,7 @@ Requires:	gtk3
 Requires:	xrandr
 Requires:	cairo
 Requires:	pango
+Requires:	xdg-utils
 
 BuildArch:	x86_64
 
