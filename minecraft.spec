@@ -7,7 +7,7 @@ Source0:	https://launcher.mojang.com/v1/objects/ce9e6169550628003e22de8086e9fe11
 Source1:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/master/%{name}.svg
 Source2:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/master/%{name}.desktop
 
-Requires:	libjawt.so
+Requires:	jre-openjdk
 Requires:	atk
 Requires:	dbus-libs
 Requires:	libdrm
