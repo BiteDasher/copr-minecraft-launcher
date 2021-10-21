@@ -8,6 +8,7 @@ Source1:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/ma
 Source2:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/master/%{name}.desktop
 
 Requires:	jre-openjdk
+Requires:	jre-headless
 Requires:	atk
 Requires:	dbus-libs
 Requires:	libdrm
