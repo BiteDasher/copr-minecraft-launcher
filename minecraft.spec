@@ -1,14 +1,12 @@
 Name:		minecraft-launcher
 Version:	1035
-Release:	3
+Release:	4
 Summary:	Minecraft Java Launcher bootstrap
 License:	All rights reserved
 Source0:	https://launcher.mojang.com/v1/objects/ce9e6169550628003e22de8086e9fe1186c2285e/%{name}
 Source1:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/master/%{name}.svg
 Source2:	https://raw.githubusercontent.com/BiteDasher/copr-minecraft-launcher/master/%{name}.desktop
 
-Requires:	jre-openjdk
-Requires:	jre-headless
 Requires:	atk
 Requires:	dbus-libs
 Requires:	libdrm
@@ -18,6 +16,9 @@ Requires:	xrandr
 Requires:	cairo
 Requires:	pango
 Requires:	xdg-utils
+
+Recommends:	jre-headless
+Recommends:	orca
 
 BuildArch:	x86_64
 
@@ -36,3 +37,7 @@ install -D -m 644 %{SOURCE2} %{buildroot}/%{_datadir}/applications/%{name}.deskt
 %{_bindir}/%{name}
 %{_datadir}/icons/hicolor/symbolic/apps/%{name}.svg
 %{_datadir}/applications/%{name}.desktop
+
+%changelog
+* Fri Oct 22 2021 Artemy Sudakov <finziyr@yandex.ru> - 1035-4
+- Remove java dependencies
